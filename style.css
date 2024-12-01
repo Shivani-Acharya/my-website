@@ -1,0 +1,185 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Settings */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 60px; /* Adjust for fixed nav */
+}
+
+/* Header Styling */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bio Section */
+#bio {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#bio .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#bio h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#bio p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/* Resume Section */
+#resume {
+    background-color: #f4f4f9;
+    padding: 40px 0;
+}
+
+#resume .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#resume h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#resume .section {
+    margin-bottom: 30px;
+}
+
+#resume h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#resume ul {
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+#resume li {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#contact .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#contact form button {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #bio .container,
+    #resume .container,
+    #contact .container {
+        width: 90%;
+    }
+}
+
